@@ -26,6 +26,13 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'airblade/vim-gitgutter'
 
+"matchmaker
+Plug 'qstrahl/vim-matchmaker'
+let g:matchmaker_enable_startup = 1
+
+" latex
+Plug 'lervag/vimtex'
+
 " R
 Plug 'jalvesaq/nvim-r'
 call plug#end()
@@ -36,9 +43,12 @@ set mouse=a
 set termguicolors
 " set ignorecase
 " set smartcase
+set shiftwidth=2
+set tabstop=2
 set expandtab
 set autoindent
 set smartindent
 colorscheme one
 set background=dark
 
+call one#highlight('Matchmaker', 'none', '444444', 'none')
