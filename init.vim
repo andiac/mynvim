@@ -26,6 +26,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'airblade/vim-gitgutter'
+Plug 'jreybert/vimagit'
 Plug 'roman/golden-ratio'
 " let g:golden_ratio_exclude_nonmodifiable = 1
 " snippets
