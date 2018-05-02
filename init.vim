@@ -62,5 +62,6 @@ set nosmartindent
 colorscheme one
 set background=dark
 set hidden
+set scrolloff=3
 
 call one#highlight('Matchmaker', 'none', '444444', 'none')
