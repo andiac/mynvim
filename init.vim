@@ -1,3 +1,6 @@
+let mapleader = ' '
+let maplocalleader = ' '
+
 call plug#begin('~/.config/nvim/plugged')
 Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-highlightedyank'
@@ -35,6 +38,7 @@ Plug 'honza/vim-snippets'
 let g:UltiSnipsExpandTrigger="<C-k>"
 let g:UltiSnipsJumpForwardTrigger="<C-k>"
 let g:UltiSnipsJumpBackwardTrigger=""
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/UltiSnips']
 
 "matchmaker
 Plug 'qstrahl/vim-matchmaker'
@@ -42,9 +46,19 @@ let g:matchmaker_enable_startup = 1
 
 " latex
 Plug 'lervag/vimtex'
+Plug 'xuhdev/vim-latex-live-preview'
+let g:vimtex_view_general_viewer = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+let g:vimtex_view_general_options = '-r @line @pdf @tex'
+let g:vimtex_view_general_options_latexmk = '-r'
 
 " R
 Plug 'jalvesaq/nvim-r'
+
+" markdown
+Plug 'shime/vim-livedown'
+
+Plug 'FooSoft/vim-argwrap'
+nnoremap <leader>a :ArgWrap<CR>
 call plug#end()
 
 set nu

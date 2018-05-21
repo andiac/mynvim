@@ -4,7 +4,8 @@ zplug "zplug/zplug", hook-build:"zplug --self-manage"
 zstyle ':prezto:module:*' color 'yes'
 zstyle ':prezto:module:*' case-sensitive 'no'
 zstyle ':prezto:module:prompt' theme sorin
-zstyle ':prezto:module:editor' key-bindings 'emacs'
+# zstyle ':prezto:module:editor' key-bindings 'emacs'
+zstyle ':prezto:module:editor' key-bindings 'vim'
 
 zplug "modules/bundler", from:prezto
 zplug "modules/directory", from:prezto
@@ -34,3 +35,5 @@ export BROWSER='google-chrome'
 export TERM=xterm-256color
 
 [ -x "$(command -v fasd)" ] && eval "$(fasd --init auto)"
+
+export PATH="/Users/andizhang/anaconda3/bin:$PATH"
