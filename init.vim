@@ -2,6 +2,8 @@ let mapleader = ' '
 let maplocalleader = ' '
 
 call plug#begin('~/.config/nvim/plugged')
+Plug 'mhinz/vim-startify'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-highlightedyank'
 Plug 'junegunn/vim-easy-align'
